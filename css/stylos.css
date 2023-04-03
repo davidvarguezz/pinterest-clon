@@ -1,0 +1,205 @@
+
+
+img{
+    max-width: 100%;
+    display: block;
+    pad: 0 8px 16px 8px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+   
+}
+
+main{
+    columns: 6 230px;
+    column-gap: .9em;
+    padding-top: 20px;
+}
+
+.card-image:hover .image {
+    opacity: 0.85;
+    cursor: zoom-in;
+  }
+
+nav{
+    display: flex;
+    height: 50px;
+    margin-top: 1%;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  
+    
+}
+
+
+nav  li{
+    list-style: none;
+    cursor: pointer;
+    padding: 12px 11px 0px 11px
+}
+
+.notification {
+    margin: -10px;
+}
+
+#inicio{
+    font-weight: 600;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+}
+
+.search{   
+    width: 70%;
+}
+    
+input.finder{
+    border: 0;
+    border-radius: 50px;
+    background-color:  rgb(215, 215, 215);
+    width: 100%;
+    margin-top: -20px;
+    height: 48px;
+    
+}
+
+.profile img{
+    margin-top: -6px;
+    border-radius: 50%;
+
+   
+}
+
+#message{
+    margin-top: -.5%;
+}
+
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+
+  }
+  
+  
+
+  .card-image:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: red;
+    color: white;
+    padding: 16px 16px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    border-radius: 30px;
+    cursor: pointer;    
+   
+  }
+  .card-image:hover .bottom {
+    opacity: 1;
+  }
+
+  .bottom {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 93%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+
+  }
+
+  .upload {
+    background-color: white;
+    padding: 8px 8px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+  .card-image:hover .p-suspensivos {
+    opacity: 1;
+  }
+
+  .p-suspensivos {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 95.5%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+    
+  }
+
+  .suspensivos{
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+  .card-image {
+    position: relative;
+    width: 100%;
+    
+  }
+
+  @media screen and (max-width: 550px) {
+
+    main{
+        columns: 2;
+    }
+
+
+
+}
+
+@media screen and (min-width: 551px) {
+
+    main{
+        columns: 3;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    main{
+        columns: 4;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    main{
+        columns: 5;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+    main{
+        columns: 6;
+    }
+}
+
+
+
