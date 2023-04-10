@@ -1,21 +1,43 @@
 
+body{
+  background-color: white;
+}
+
 nav{
-  display: flex;
+  display: block;
   height: 50px;
   margin-top: 1%;
   margin-left: 20px;
   font-weight: 400;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
+  background-color: white;
+  
+  }
 
+ul{
+  list-style-type: none;
+  padding: 0; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li{
+  float: left;
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
   
 }
 
-
 nav  li{
   list-style: none;
+  display: block;
   cursor: pointer;
+  text-align: center;
   padding: 12px 11px 0px 11px
+
 }
 
 .notification {
@@ -66,10 +88,16 @@ img{
 }
 
 main{
-    columns: 6 230px;
-    column-gap: .9em;
-    padding-top: 20px;
+  columns: 6 230px;
+  column-gap: 16px;
+  padding-top: 20px;
+  margin-top: 30px;
+  background-color: white;
+  display: block;
+  
+  
 }
+
 
 .card-image:hover .image {
     opacity: 0.85;
